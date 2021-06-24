@@ -1,21 +1,24 @@
 <%- include("header") -%>
     <link rel="stylesheet" href="css/index.css">
-</head>
-<body>
-    <div class="logo-wrapper">
-    <img src="images/Logo.png" alt="CDMS">
-    </div>
-    <h1>Company Database Management System</h1>
+    </head>
 
-    <!--button 1-->
-    <div>
-    <button type ="submit" class="button-1"><a href="loginAsAdmin.html">Login As Admin</a></button>
-    </div>
-    <!--button 2-->
-    <div>
-    <button type="submit" class="button-2"><a href="loginAsWorker.html">Login As Worker</a></button>
-    </div>
-    
-    <h5>Don't have an Account?<a href="signup-registration.html">Sign up</a></h5>
- 
-    <%- include("footer") -%>
+    <body>
+        <div class="home">
+            <img src="images/Logo.png" alt="CDMS">
+            <h1>Company Database Management System</h1>
+
+            <!--button 1-->
+            <div>
+                <button type="submit" class="button-1"><a href="/login_admin">Login As Admin</a></button>
+            </div>
+            <!--button 2-->
+            <div>
+                <button type="submit" class="button-2"><a href="/login_worker">Login As Worker</a></button>
+            </div>
+
+            <h5>Don't have an Account? <a href="/signup">Sign up</a></h5>
+            <footer>© All rights reserved - Company Database Management System.</footer>
+
+    </body>
+
+    </html>

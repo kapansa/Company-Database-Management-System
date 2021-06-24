@@ -15,6 +15,18 @@ app.get("/", (req, res) =>{
     res.render(__dirname + "/views/index");
 });
 
+app.get("/login_admin", (req, res) =>{
+    res.render(__dirname + "/views/loginAsAdmin");
+});
+
+app.get("/login_worker", (req, res) =>{
+    res.render(__dirname + "/views/loginAsWorker");
+});
+
+app.get("/signup", (req, res) =>{
+    res.render(__dirname + "/views/signup-registration");
+});
+
 const PORT = 3000 || process.env.PORT;
 app.listen(PORT, ()=>{
     console.log(`Server is running at PORT ${PORT}...`);
